@@ -1,0 +1,271 @@
+
+/* 头部开始 */
+header{
+}
+header .topbar{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+header .topbar .container .row >div{
+	height: 40px;
+	color: #888;
+	font-size: 12px;
+}
+header .topbar .container .row >div + div{
+	border-left: 1px solid #ccc;
+}
+header .topbar .mobile-link{
+	color: #888;
+	font-size: 12px;
+}
+header .topbar .mobile-link>img{
+	display: none;
+	position: absolute;
+	left: 50%;
+	 margin-left: -60px; /*这里是自身移动一半，图片是120*/
+	top:28px;
+	z-index: 1001;
+}
+header .topbar .mobile-link:hover{
+	text-decoration: none;
+}
+header .topbar .mobile-link:hover img{
+	display: block;
+}
+
+header  nav .icon-icon{
+	font-size: 50px;
+	color:#E92322;
+	line-height: 50px;
+	vertical-align: middle;
+}
+header nav .icon-logo{
+	font-size: 32px;
+	color:#333;
+	vertical-align: middle;
+		line-height: 50px;
+}
+/* 广告部分 */
+#main_adv{
+}
+#main_adv .carousel-inner>.item{
+	/* height: 410px; */
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* 设置cover是因为怕高度比较大，就不一样了 */
+	background-size: cover;
+}
+/* 如果高度一定的话，小屏幕是使用img图片，就不会缩小，
+ 所以这里使用媒体查询判断屏幕的大小来设置高度*/
+@media (min-width:768px) {
+	#main_adv .carousel-inner>.item{
+		height: 410px;
+		}
+}
+/* 小屏幕的img图片要100%才能在整个宽度里面 */
+#main_adv .carousel-inner>.item img{
+	width: 100%;
+}
+
+/* 特色介绍部分 */
+#main_intro{
+	padding: 50px 0;
+	border-bottom: 1px solid #ccc;
+}
+#main_intro > .container > .row>div{
+	margin-bottom: 20px;
+		margin-top: 20px;
+}
+#main_intro > .container > .row a{
+	text-decoration: none;
+	color:#000;
+}
+#main_intro > .container > .row a:hover{
+	color:#E92322;
+}
+#main_intro .media i {
+	font-size: 30px;
+}
+/* 立即预约部门 */
+#main_appoint{
+	/* 如果设置行高，那么换行的时候，会有两个行高，所以用padding */
+	/* line-height: 50px; */
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+	
+}
+#main_appoint >.container>p{
+	font-size: 16px;
+	/* 在bootstrap中p默认有一个10px的下边距 */
+	margin-bottom: 0;
+}
+#main_appoint>.container>.pull-left span,
+#main_appoint>.container>.pull-left a{
+	color: #E92322;
+}
+#main_appoint>.container>.pull-left a{
+	border-bottom: 1px dashed #E92322;
+}
+#main_appoint>.container>p a:hover{
+	text-decoration: none;
+}
+#main_appoint>.container>.pull-right a{
+	color:#000;
+}
+#main_appoint>.container>.pull-right a:hover{
+	color:#000;
+}
+#main_appoint>.container>p i{
+	font-size: 20px;
+}
+/* 产品推荐部分开始了 */
+#main_product{
+	/* height: 800px; */
+	background-color: #f0f0f0;
+	padding: 40px 0;
+}
+/* 这么写pc上也会有,应该在js上设置 */
+/* #main_product> .container .ul_row{
+	overflow-x: scroll;
+} */
+/* li.active合起来写的时候既是li也是a */
+#main_product> .container .nav-tabs{
+	padding-left: 20px;
+}
+#main_product> .container .nav-tabs li.active>a{
+	background-color: transparent;
+	border:0;
+	border-bottom: 4px solid #E92322;
+}
+#main_product> .container .nav-tabs li a{
+	font-size: 16px;
+	color:#333;
+}
+#main_product> .container .nav-tabs li a:hover{
+	border-color: transparent;
+	background-color: transparent;
+	color:#222;
+}
+/* 面板下面的内容 */
+#main_product> .container>.tab-content{
+	padding: 20px 0;
+}
+#main_product> .container>.tab-content .panel-heading{
+	padding: 45px 0;
+}
+#main_product> .container>.tab-content .panel-heading strong{
+	font-size: 36px;
+	color:#E92322;
+}
+#main_product> .container>.tab-content .panel-heading span{
+	font-size: 12px;
+}
+
+#main_product> .container>.tab-content .panel-body .row p:nth-child(1){
+	color:#c0c0c0;
+	font-size: 12px;
+} 
+#main_product> .container>.tab-content .panel-body p{
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 3px !important;
+}
+#main_product> .container>.tab-content .panel-heading>.tooltips{
+	position: absolute;	
+	text-align: center;
+	width: 100%;
+	top: 26px;
+}
+/* 产品介绍了 */
+/* 新闻版块开始了 */
+#main_news{
+	padding: 50px 0;
+	border-bottom: 1px solid #c0c0c0;
+}
+#main_news .news_title{
+	padding: 10px 0;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px dashed #c0c0c0;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	position: relative;
+}
+#main_news .news_title::after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+	position: absolute;
+	bottom: -5px;
+	right: -10px;
+}
+#main_news .nav-pills li{
+	width: 80px;
+	height: 80px;
+}
+#main_news .nav-pills li.active a{
+	background-color: #E92322;
+}
+#main_news .nav-pills li a{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+}
+#main_news .nav-pills li a:hover{
+	background-color: #E92322;
+}
+@media (max-width:992px) {
+	/* 	.nav-stacked>li是默认的那个，当屏幕小的时候，新闻版块里的导航栏变化 */
+	#main_news 	.nav-stacked>li {
+    float: left;
+		margin-right: 5px;
+}
+}
+#main_news .row .tab-content li{
+	list-style: none;
+	padding: 10px 0;
+}
+#main_news .row .tab-content li a{
+	font-size: 16px;
+	color:#333;
+}
+#main_news .row .tab-content li a:hover{
+	text-decoration: none;
+	color:#E92322;
+}
+#main_news .news_line {
+    height: 100%;
+    border-left: 1px dashed #c0c0c0;
+    position: absolute;
+    top: 0;
+    left: 52%;
+    z-index: -1;
+}
+/* 地下合作伙伴部分 */
+footer{
+	/* height: 400px; */
+}
+footer ul {
+	list-style: none;
+	width: 998px;
+	position: relative;
+	overflow-x hidden;
+} 
+footer ul li{
+	float: left;
+}
+footer ul li+li{
+	border-left: 1px dashed #c0c0c0;
+}
+footer ul li a{
+	font-size: 50px;
+	padding: 10px 30px;
+	color:#888;
+}
+footer ul li a:hover{
+	text-decoration: none;
+}
