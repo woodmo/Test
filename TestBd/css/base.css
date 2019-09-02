@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #000;
+}
+
+/*头部导航部分开始*/
+
+.top {
+	height: 60px;
+}
+
+.top .nav ul {
+	float: right;
+}
+
+.top .nav li {
+	float: left;
+	margin-top: 17px;
+	margin-right: 19px;
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+	font-weight: 700;
+}
+
+.top .nav ul .btn {
+	display: block;
+	padding: 0 2px;
+	background-color: #3388FF;
+}
+
+.top .nav ul .btn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.top .nav ul li a:hover {
+	color: #3388FF;
+}
+
+
+/*头部导航部分结束*/
+
+
+/*中间部分*/
+
+.main {
+	text-align: center;
+	margin-top: 33px;
+}
+
+.main>.logo>img {
+	width: 270px;
+	height: 88px;
+}
+.main>.inp{
+	text-align: center;
+}
+.main>.inp form {
+	margin-top: 21px;
+	height: 36px;
+	position: absolute;
+	left: 50%;
+	margin-left: -320px;
+	width: 640px;
+}
+
+.main>.inp form i {
+	position: absolute;
+	right: 125px;
+	top: 8px;
+	font-size: 20px;
+}
+.main>.inp form i:hover {
+	color: #3388FF;
+}
+
+.main>.inp form input {
+	box-sizing: border-box;
+	vertical-align: middle;
+	outline: none;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+.main>.inp form input[type="text"] {
+	width: 540px;
+	height: 100%;
+}
+
+.main>.inp form input[type="text"]:focus {
+	border-color: #3388FF;
+	outline: none;
+}
+
+.main>.inp form input[type="submit"] {
+	border: none;
+	margin-left: ;
+	color: #fff;
+	font-size: 15px;
+	background-color: #3388FF;
+	width: 100px;
+	height: 100%;
+}
+
+
+/*二维码部分*/
+
+.er {
+	margin-top: 95px;
+	text-align: center;
+}
+
+.er>.er_img {
+	width: 113px;
+	height: 113px;
+	margin: 0 auto;
+	padding: 2px;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
+.er .er_img img {
+	margin-top: 4px;
+}
+
+.er p {
+	margin-top: 5px;
+}
+
+.er>p {
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+
+.er> div p {
+	font-size: 14px;
+	color: #B9B9B9;
+}
+
+
+/*底部部分*/
+
+.foot {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.foot ul li {
+	padding: 0 10px;
+	display: inline-block;
+}
+
+.foot ul li a {
+	color: #B9B9B9;
+	font-size: 13px;
+}
+
+.foot p {
+	margin-top: 5px;
+	color: #B9B9B9;
+	font-size: 13px;
+}
+
+.foot p a {
+	color: #B9B9B9;
+}
