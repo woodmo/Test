@@ -1,0 +1,8 @@
+一：先进入c盘，接着进自己的文件夹
+cd D:/   --------cd Test
+二：选择添加的目录
+git add 目录  ------- 全部文件是 git add .
+三：添加备注信息
+git commit  -m  "随便写"
+四：登录自己账号确定
+git push -u origin master
