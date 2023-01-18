@@ -6,3 +6,4 @@ git add 目录  ------- 全部文件是 git add .
 git commit  -m  "随便写"
 四：登录自己账号确定
 git push -u origin master
+五：测试
